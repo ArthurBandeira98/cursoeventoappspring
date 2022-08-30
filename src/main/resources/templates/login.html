@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    
+    <link rel="stylesheet" href="style/styleCss.css"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+	<header>
+	<nav>
+    	<div class="nav-wrapper #212121 grey darken-4">
+	     	<div class="left"><a href="#!" class="brand-logo"><span class="white-text">Lista de eventos</span></a></div>
+    	</div>
+  	</nav>
+	</header>
+
+	<form class="container formLogin" method="POST" th:object="${login}" align="center">
+		<h2>Login</h2>
+		<input id="username" name="username" class="inputLogin">
+		<input id="password" name="password">
+		<br>
+		<br>
+		<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">save</i>LOGIN</button>
+	</form>	
+
+</body>
+</html>

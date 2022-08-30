@@ -1,3 +1,16 @@
+.formLogin {
+	box-shadow: 0px 0px 2px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding: 10px;
+	margin-bottom: 60px;
+}
+
+.inputLogin {
+	width: 200px;
+	height: 200px;
+}
+
 .detalhesEvento {
 	box-shadow: 0px 0px 2px grey;
 	padding-top: 20px;

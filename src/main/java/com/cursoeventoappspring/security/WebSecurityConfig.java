@@ -23,7 +23,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.csrf().disable().authorizeRequests().antMatchers(HttpMethod.GET, "/").permitAll()
 				.antMatchers(HttpMethod.GET, "/cadastrarEvento").hasRole("ADMIN")
 				.antMatchers(HttpMethod.POST, "/cadastrarEvento").hasRole("ADMIN").anyRequest().authenticated().and()
-				.formLogin().permitAll().and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+				.formLogin().loginPage("/login").permitAll().and().logout()
+				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 	}
 
 	@Override
